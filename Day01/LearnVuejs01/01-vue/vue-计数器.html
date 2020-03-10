@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计数器</title>
+</head>
+<body>
+<!--按钮事件-->
+<div id="app">
+    <h1>当前时间:{{counter}}</h1>
+    <!--
+   <button v-on:click="counter++">+</button>
+    -->
+
+    <button v-on:click="add">+</button>
+    <button v-on:click="counter--">-</button>
+</div>
+<script src="../js/vue.js"></script>
+<script>
+    const app=new Vue({
+        el:'#app',
+        data:{
+            counter:0
+        },
+        methods:{
+          add:function(){
+              this.counter++;
+          }
+        }
+    })
+
+</script>
+
+</body>
+</html>

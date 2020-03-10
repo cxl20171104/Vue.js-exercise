@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <div id="app">
+         {{message}}
+      select单选
+      {{friut}}
+      <select name="abc" id="d" v-model="friut">
+          <option value="01">苹果</option>
+          <option value="02">香蕉</option>
+          <option value="03">葡萄</option>
+      </select>
+      select多选
+      {{friuts}}
+      <select  v-model="friuts" multiple>
+          <option value="01">苹果</option>
+          <option value="02">香蕉</option>
+          <option value="03">葡萄</option>
+      </select>
+    </div>
+    <script src="../js/vue.js"></script>
+   <script>
+       const app = new Vue({
+           el: '#app',
+           data: {
+               message: "你好吗？",
+               friut:'02',
+               friuts:['01','02']
+           }
+       })
+   </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    {{message}}
+
+    <cpn>
+        <button slot="left">返回</button>
+        <input value="" slot="center"/>
+        <button slot="right">搜索</button>
+    </cpn>
+
+</div>
+<template id="cpn">
+    <div>
+
+        <slot name="left">左边</slot>
+        <slot name="center">中间</slot>
+        <slot name="right">右边</slot>
+    </div>
+</template>
+<script src="../js/vue.js"></script>
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            message: "你好吗？"
+        },
+        components:{
+            cpn:{
+                template:'#cpn'
+            }
+        }
+    })
+</script>
+</body>
+</html>

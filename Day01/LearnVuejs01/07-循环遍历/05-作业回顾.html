@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .active{
+            color:red
+        }
+    </style>
+</head>
+<body>
+  <div id="app">
+         {{message}}
+      <ul>
+         <li v-for="(n,index) in movies" :class="{active:currentIndex===index}" @Click="btnClick(index)">{{index}}--{{n}}</li>
+      </ul>
+    </div>
+    <script src="../js/vue.js"></script>
+   <script>
+       const app = new Vue({
+           el: '#app',
+           data: {
+               message: "你好吗？",
+               movies:['海王','海贼王','海尔兄弟'],
+               //点击的li
+               currentIndex: 0
+           },methods:{
+               btnClick:function(index){
+                   this.currentIndex=index;
+               }
+           }
+       })
+   </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .active{
+            color: red
+        }
+        .line{
+            color: blue
+        }
+    </style>
+</head>
+<body>
+  <div id="app">
+      <h2 :class="active">{{message}}</h2>
+      <!--对象的方式绑定class--><!--键为类名-->
+      <h2 class="YYYY" v-bind:class="{active:isActive,line: isLine}" v-on:click="btnClick">{{message}}</h2>
+      <h2 class="YYYY" v-bind:class="getClass()" v-on:click="btnClick">{{message}}</h2>
+    </div>
+    <script src="../js/vue.js"></script>
+   <script>
+       const app = new Vue({
+           el: '#app',
+           data: {
+               message: "你好吗？",
+               active: 'active',
+               isActive:true,
+               isLine: false
+           },
+           methods:{
+               btnClick:function(){
+                   <!--取反运算符-->
+                   this.isActive=!this.isActive;
+                   console.log(this.active);
+               },getClass:function(){
+                   return {active:this.isActive,line: this.isLine}
+               }
+           }
+       })
+   </script>
+</body>
+</html>

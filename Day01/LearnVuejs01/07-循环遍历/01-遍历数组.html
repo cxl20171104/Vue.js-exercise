@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <div id="app">
+         {{message}}
+      <ul>
+          <li v-for="(n,index) in names">{{index+1}},{{n}}</li>
+      </ul>
+    </div>
+    <script src="../js/vue.js"></script>
+   <script>
+       const app = new Vue({
+           el: '#app',
+           data: {
+               message: "你好吗？",
+               names: ['why','kobe','james','curry']
+           }
+       })
+   </script>
+
+</body>
+</html>

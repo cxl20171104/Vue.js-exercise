@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <div id="app">
+         {{message}}
+      <cpn></cpn>
+      <hr/>
+      <cpn></cpn>
+      <hr/>
+      <cpn>
+          <!--父组件获取子组件中的属性-->
+          <template slot-scope="slot">
+              <span >{{slot.data.join('-')}}</span>
+          </template>
+      </cpn>
+    </div>
+  <template id="cpn">
+      <div>
+          <!--传递属性：data自定的-->
+          <slot :data="pLanguages"><h2 v-for="n in pLanguages">{{n}}</h2></slot>
+      </div>
+  </template>
+    <script src="../js/vue.js"></script>
+   <script>
+       const app = new Vue({
+           el: '#app',
+           data: {
+               message: "你好吗？"
+           },components:{
+               cpn:{
+                   template:'#cpn',
+                   data(){
+                       return{
+                           pLanguages:['java','C','C#','Python','Go']
+                       }
+                   }
+               }
+           }
+       })
+   </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <div id="app">
+         {{message}}
+      <button @Click="btn('按钮1')">按钮1</button>
+      <button @Click="btn2('按钮2',$event)">按钮2</button>
+    </div>
+    <script src="../js/vue.js"></script>
+   <script>
+       const app = new Vue({
+           el: '#app',
+           data: {
+               message: "你好吗？"
+           },
+           methods:{
+               btn:function(a){
+                   console.log(a);
+               },
+               btn2:function(a,event){
+                   console.log(a);
+                   console.log(event);
+               }
+           }
+       })
+   </script>
+</body>
+</html>

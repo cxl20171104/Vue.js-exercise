@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+         {{message}}
+        <cpn></cpn>
+    </div>
+    <div id="app2">
+
+    </div>
+    <script src="../js/vue.js"></script>
+   <script>
+       //1.组件构造器
+       const cpnC=Vue.extend({
+           template:`<div>CXP</div>`
+       });
+       //2.注册组件（全局）
+       //Vue.component('my-cpn',cpnC)
+
+       const app = new Vue({
+           el: '#app',
+           data: {
+               message: "你好吗？"
+           },
+           //局部注册组件
+           components:{
+               cpn:cpnC
+           }
+       })
+       const app2=new Vue({
+           el: '#app2',
+           data: {
+               message: "你好吗？"
+           }
+       });
+   </script>
+</body>
+</html>

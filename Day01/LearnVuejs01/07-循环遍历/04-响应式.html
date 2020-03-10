@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <div id="app">
+         {{message}}
+      <ul>
+        <li v-for="n in letters" :key="n">{{n}}</li>
+      </ul>
+      <button @Click="btnClick">添加元素</button>
+    </div>
+    <script src="../js/vue.js"></script>
+   <script>
+       const app = new Vue({
+           el: '#app',
+           data: {
+               message: "你好吗？",
+               letters:['a','b','c','d']
+           },
+           methods:{
+               btnClick(){
+                   //1.push方法
+                   //this.letters.push('fuck');
+                   //2.pop方法删除最后一个元素
+                   //this.letters.pop();
+                   //3.shift方法删除第一个元素
+                   //this.letters.shift();
+                   //4.unshift在最前面添加
+                   //this.letters.unshift('EEEE','GGGGG')
+                   //5.splice
+                   //this.letters.splice(1,3,'EEEEE','AAAA','VVVVV');
+                   //this.letters.splice(0,1,'bbbbbbb');
+                   //6.sort
+                   //7.reverse
+                   //this.letters.reverse();
+                   //修改数组内的值响应式显示
+                   Vue.set(this.letters,0,'DDDDDD')
+               }
+           }
+       })
+       function abd(...cxl){
+           console.log(cxl);
+       }
+       abd('d','a');
+   </script>
+</body>
+</html>

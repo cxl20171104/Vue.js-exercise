@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <div id="app">
+         {{message}}
+      <cpn></cpn>
+      <cpn2></cpn2>
+    </div>
+    <script src="../js/vue.js"></script>
+   <script>
+       //const cpnC=Vue.extend();
+       Vue.component('cpn',{
+           template:`<div>CXP</div>`
+       });
+       const app = new Vue({
+           el: '#app',
+           data: {
+               message: "你好吗？"
+           },
+           components:{
+               cpn2:{
+                   template:`<div>CXP#</div>`
+               }
+           }
+       })
+   </script>
+</body>
+</html>

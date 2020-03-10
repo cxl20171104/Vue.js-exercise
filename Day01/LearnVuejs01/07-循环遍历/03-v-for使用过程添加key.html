@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <div id="app">
+         {{message}}
+      <ul>
+          <li v-for="n in letters" :key="n">{{n}}</li>
+      </ul>
+    </div>
+    //app.letters.splice(2,0,'F')//数组第二个元素后添加F
+    <script src="../js/vue.js"></script>
+   <script>
+       const app = new Vue({
+           el: '#app',
+           data: {
+               message: "你好吗？",
+               letters:['A','B','C']
+           }
+       })
+   </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const nums=[10,30,10,20,56,2,5];
+    //取出数组中小于30的值再乘以2
+    //再相加
+    //filter/map/reduce
+    let nums2=nums.filter(function(num){
+       return num<50
+    })
+    console.log(nums2);
+    let nums3=nums2.map(function(n){
+        return n*2
+    })
+    console.log(nums3)
+    //对所有内容进行汇总
+    let total=nums3.reduce(function(preValue,n){
+        //preValue上一次返回的值
+        return preValue+n;
+    },0)//初始化值
+    console.log(total);
+
+    let total2=nums.filter(function(n){
+        return n<30
+    }).map(function(n){
+        return n*2
+    }).reduce(function(pre,n){
+       return pre+n;
+    },0)
+    console.log(total2);
+
+    let total3=nums.filter(n=>n>30).map(n=>n*2).reduce((pre,n)=>pre+n);
+    console.log(total3);
+</script>
+</body>
+</html>

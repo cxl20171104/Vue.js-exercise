@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <div id="app">
+      <!--动态绑定-->
+       <img v-bind:src="imgUrl" alt="message">
+       <a v-bind:href="href">百度一下</a>
+      <!--简写-->
+       <a :href="href">百度一下</a>
+    </div>
+    <script src="../js/vue.js"></script>
+   <script>
+       const app = new Vue({
+           el: '#app',
+           data: {
+               message: "你好吗？",
+               imgUrl: '../images/england.png',
+               href: 'http://wwww.baidu.com'
+           }
+       })
+   </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <div id="app">
+         {{message}}
+      <!--value在前面，key在后面-->
+      <ul>
+          <li v-for="n in info">{{n}}</li>
+      </ul>
+      <ul>
+          <li v-for="(value,key) in info">{{value}}-{{key}}</li>
+      </ul>
+      <ul>
+          <li v-for="(value,key,index) in info">{{value}}-{{key}}-{{index}}</li>
+      </ul>
+    </div>
+    <script src="../js/vue.js"></script>
+   <script>
+       const app = new Vue({
+           el: '#app',
+           data: {
+               message: "你好吗？",
+               info:{
+                   name:'why',
+                   age:'18',
+                   height:'1.88'
+               }
+           }
+       })
+   </script>
+</body>
+</html>

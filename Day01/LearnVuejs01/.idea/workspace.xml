@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4e7c9a89-c3a0-462d-bea8-c4efa5c8fcfb" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="LearnVuejs01" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XHMmQBMOZDNEvIWbwGpM0KAJjb" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Day04/LearnVuejs04-v2" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Study\Day 01\LearnVuejs01\images" />
+      <recent name="D:\Study\Day 01\LearnVuejs01\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Study\Day 01\LearnVuejs01\02-插值操作" />
+      <recent name="D:\Study\Day 01\LearnVuejs01\01-vue" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.02-v-if和v-elese的使用.html">
+    <configuration name="02-v-if和v-elese的使用.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LearnVuejs01/06-条件判断/02-v-if和v-elese的使用.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="03-v-html指令.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LearnVuejs01/02-插值操作/03-v-html指令.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="04-作业.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LearnVuejs01/03-绑定属性/04-作业.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="04-v-text指令.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LearnVuejs01/02-插值操作/04-v-text指令.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="06-v-cloak指令.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LearnVuejs01/02-插值操作/06-v-cloak指令.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.02-v-if和v-elese的使用.html" />
+        <item itemvalue="JavaScript Debug.04-作业.html" />
+        <item itemvalue="JavaScript Debug.06-v-cloak指令.html" />
+        <item itemvalue="JavaScript Debug.04-v-text指令.html" />
+        <item itemvalue="JavaScript Debug.03-v-html指令.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4e7c9a89-c3a0-462d-bea8-c4efa5c8fcfb" name="Default Changelist" comment="" />
+      <created>1580698725483</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580698725483</updated>
+      <workItem from="1580698728504" duration="7436000" />
+      <workItem from="1580740624477" duration="4972000" />
+      <workItem from="1580801006298" duration="8134000" />
+      <workItem from="1580878636201" duration="12013000" />
+      <workItem from="1580969696513" duration="11662000" />
+      <workItem from="1581055060595" duration="13250000" />
+      <workItem from="1581139778290" duration="8435000" />
+      <workItem from="1581221250212" duration="10037000" />
+      <workItem from="1581328374009" duration="809000" />
+      <workItem from="1582019510995" duration="4004000" />
+      <workItem from="1582087206409" duration="24000" />
+      <workItem from="1582087307411" duration="12000" />
+      <workItem from="1582095910852" duration="2532000" />
+      <workItem from="1582117294963" duration="15000" />
+      <workItem from="1582191538175" duration="608000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

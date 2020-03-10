@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <div id="app">
+      <!--v-if删除和增加元素-->
+      <h2 v-if="isShow"  id="a"> {{message}}</h2>
+      <!--v-show元素任然存在但为增加行内样式display：none-->
+      <h2 v-show="isShow" id="b"> {{message}}</h2>
+    </div>
+    <script src="../js/vue.js"></script>
+   <script>
+       const app = new Vue({
+           el: '#app',
+           data: {
+               message: "你好吗？",
+               isShow: true
+           }
+       })
+   </script>
+</body>
+</html>

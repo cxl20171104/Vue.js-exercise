@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <div id="app">
+         {{message}}
+      <h2>父组件中的值:{{number1}}</h2>
+      <cpn :cnumber1="number1"  @num1change="num1change"></cpn>
+    </div>
+  <template id="cpn">
+      <div>
+          <h1>赋值时</h1>
+          number1----->cnumber1--->dnumber1
+          <h2>子组件接收父组件值:{{cnumber1}}</h2>
+          <h2>组件中的值:{{dnumber1}}</h2>
+
+          <h1>修改时</h1>
+          input---->number1Input--->this.$emit----->num1change----> @num1change="num1change"
+          <input type="text"  :value="dnumber1" @input="number1Input"/>
+
+
+      </div>
+  </template>
+    <script src="../js/vue.js"></script>
+   <script>
+       const app = new Vue({
+           el: '#app',
+           data: {
+               message: "你好吗？",
+               number1:0
+
+           },
+           methods:{
+               num1change:function(value){
+                   console.log('父组件');
+                   console.log(value);
+                   this.number1=value;
+               }
+           },
+           components:{
+               cpn:{
+                   template:'#cpn',
+                   props:{
+                       cnumber1:Number
+
+                   },data(){
+                       return {
+                           dnumber1:this.cnumber1
+
+                       }
+
+                   },methods:{
+                       number1Input:function(event){
+                           this.dnumber1=event.target.value*1;
+                           console.log(this.dnumber1);
+                           this.$emit('num1change',this.dnumber1);
+                       }
+                   }
+
+               }
+           }
+       })
+   </script>
+</body>
+</html>

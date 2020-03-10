@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2020</title>
+    <style>
+
+    </style>
+</head>
+<div id="app" style=" background:url('../images/england.png')no-repeat;height:850px">
+    <h1>This Year is 2020</h1>
+    <h2>I Must Do：</h2>
+    <ul>
+        <li v-for="item in dos"><h3>{{item}}</h3></li>
+    </ul>
+</div>
+<body>
+<script src="../js/vue.js"></script>
+<script>
+    const app = new Vue({
+        el:'#app',
+        data:{
+            dos:['学习20堂IT课程','通过消防考试','学会5首小提琴曲']
+        },//hook钩子
+        created: function(){
+            console.log('加载完成......');
+        },
+        beforeCreate: function(){
+            console.log('创建之前......')
+        }
+
+    })
+
+</script>
+</body>
+</html>
