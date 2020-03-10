@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promise其他处理形式</title>
+</head>
+<body>
+  <script>
+      new Promise((resolve,reject)=>{
+          setTimeout(()=>{
+              //resolve("Hello Cxl")
+              reject("GGGGG")
+          },2000)
+      }).then(data=>{
+          console.log("data")
+      },err=>{
+          console.log("err")
+      })
+  </script>
+</body>
+</html>

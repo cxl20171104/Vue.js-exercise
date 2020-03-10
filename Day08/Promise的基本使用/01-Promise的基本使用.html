@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promise</title>
+</head>
+<body>
+   <script>
+       //1.使用setTimeout
+       // setTimeout(()=>{
+       //     console.log('hellow world')
+       // },1000)
+
+       //参数是个函数
+       //链式编程
+       new Promise((resolve,reject)=>{
+           //第一次网络请求的处理代码
+           setTimeout(()=>{
+               //resolve对应then
+               resolve()
+           },1000)
+       }).then(()=>{
+           console.log('hello world')
+           return new Promise((resolve,reject)=>{
+               //第二次网络请求的代码
+               setTimeout(()=>{
+                   resolve()
+               },1000)
+           }).then(()=>{
+               console.log("hello vue.js")
+               return new Promise((resolve,reject)=>{
+                   //第三次网络请求代码
+                   setTimeout(()=>{
+                       resolve()
+                   },1000)
+               }).then(()=>{
+                   console.log("hello python")
+               })
+           })
+       })
+
+
+       new Promise((resolve,reject)=>{
+           //请求成功的时候
+           // setTimeout(()=>{
+           //     resolve("cxl is the best")
+           // },1000)
+           setTimeout(()=>{
+               reject("error")
+           },5000)
+       }).then((data)=>{
+           console.log(data);
+       }).catch((err)=>{
+           console.log(err)
+       })
+   </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+Promise：是异步编程的一种解决方案
+
+解决回调地狱问题
+
+t1=>使用场合
+t2=>有异步操作时，使用Promise对异步操作进行封装
+
+t1=>Promise三种状态
+t2=>pending等待
+t3=>fulfill满足状态
+t4=>reject拒绝状态
+
+Promise的链式调用
