@@ -1,0 +1,13 @@
+本节内容：
+
+npm install style-loader --save-dev
+//图片路径配置
+npm install --save-dev url-loader
+//ES6转ES5
+npm install --save-dev babel-loader@7 babel-core babel-preset-es2015
+//安装Vue
+npm install vue --save
+//编译Vue开发中
+npm install vue-loader vue-template-compiler --save-dev
+//
+

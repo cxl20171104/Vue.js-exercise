@@ -1,0 +1,7 @@
+body{
+  background-color: red;
+  background: url("../img/2.jpg");/*小的图片webpack会将图片转成base64*/
+  background: url("../img/img.png");/*大的图片使用file-loader加载 还要配置路径拼接*/
+  /*dist文件夹下的图片时打包时的图片*/
+  /*data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAeAB4AAD/2wBDAAIBAQIBAQICAgICAgIC…FFABRRRQAYpxkZlClmKjoM9KKKAG4ooooAKKKKACiiigAqO3cvCpNFFAElFFFABRRRQB//2Q==*/
+}

@@ -1,0 +1,28 @@
+本节内容：
+
+npm install style-loader --save-dev
+//图片路径配置
+npm install --save-dev url-loader
+//ES6转ES5
+npm install --save-dev babel-loader@7 babel-core babel-preset-es2015
+//安装Vue
+npm install vue --save
+//编译Vue开发中
+npm install vue-loader vue-template-compiler --save-dev
+//本项目用于测试添加插件
+webpack.BannerPlugin('版权信息')
+//打包html
+安装HtmlwebpackPlugin插件
+npm install html-webpack-plugin --save-dev
+//对js进行压缩
+npm install uglifyjs-webpack-plugin@1.1.1 --save-dev
+//搭建本地服务器（在不打包的情况下，更新并展示代码）
+npm install --save-dev webpack-dev-server@2.9.1
+//配置本地服务命令---在package.json配置过了
+启动： npm run dev
+停止： ctrl+C
+
+
+
+
+

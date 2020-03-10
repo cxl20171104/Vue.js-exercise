@@ -1,0 +1,8 @@
+本节内容：
+
+npm install style-loader --save-dev
+
+npm install --save-dev url-loader
+//ES6转ES5
+npm install --save-dev babel-loader@7 babel-core babel-preset-es2015
+

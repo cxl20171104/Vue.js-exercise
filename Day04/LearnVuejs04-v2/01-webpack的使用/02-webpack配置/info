@@ -1,0 +1,8 @@
+本节内容：
+项目添加node模块:npm init
+入口出口配置：webpack.config.js
+命令配置：package.json
+项目根目录+webpack
+package.json 配置启动命令  npm run bulid----->webpack 优先使用本地的 如果本地没有才寻找全局
+全局安装webpack：npm install webpack@3.6.0 -g
+局部安装webpack: npm install webpack@3.6.0 --save-dev

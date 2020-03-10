@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6341f02a-a45b-48fa-b2f2-12df8ad6d389" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="Less File" />
+        <option value="vue" />
+        <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Xbz2mcXTqd3eD9pbnBaw11PhiQ" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Vue-Day06" />
+    <property name="list.type.of.created.stylesheet" value="Less" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Study\Day04\LearnVuejs04-v2\01-webpack的使用\03-webpack-loder\src\js" />
+      <recent name="D:\Study\Day04\LearnVuejs04-v2\01-webpack的使用\03-webpack-loder\src" />
+      <recent name="D:\Study\Day04\LearnVuejs04-v2\01-webpack的使用\01-webpack起步" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Study\Day04\LearnVuejs04-v2\01-webpack的使用" />
+      <recent name="D:\Study\Day04\LearnVuejs04-v2\01-webpack的使用\03-webpack-loder\src\img" />
+      <recent name="D:\Study\Day04\LearnVuejs04-v2" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6341f02a-a45b-48fa-b2f2-12df8ad6d389" name="Default Changelist" comment="" />
+      <created>1581329376782</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581329376782</updated>
+      <workItem from="1581329377977" duration="7716000" />
+      <workItem from="1581918157342" duration="12188000" />
+      <workItem from="1581988751602" duration="7220000" />
+      <workItem from="1582019486409" duration="623000" />
+      <workItem from="1582087206382" duration="58000" />
+      <workItem from="1582087307278" duration="4511000" />
+      <workItem from="1582095796278" duration="112000" />
+      <workItem from="1582117311418" duration="844000" />
+      <workItem from="1582191484914" duration="51000" />
+      <workItem from="1582194909343" duration="6009000" />
+      <workItem from="1582280800468" duration="2308000" />
+      <workItem from="1582371884587" duration="143000" />
+      <workItem from="1583317942989" duration="61000" />
+      <workItem from="1583379097954" duration="26000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
