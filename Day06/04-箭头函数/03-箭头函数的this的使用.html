@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    // setTimeout(function(){
+    //
+    // },1000);
+
+
+    //结论:箭头函数中this引用的是最近作用域中的this
+    //答案:向外层作用域层层查找直到有this的定义
+    // setTimeout(()=>{
+    //    console.log(this);
+    // },1000)
+
+    const obj ={
+        aaa(){
+
+            setTimeout(function () {
+                console.log(this);//打印window对象
+            },1000);
+            setTimeout(()=>{
+                console.log(this);//打印obj对象
+            },2000);
+        }
+    }
+
+    obj.aaa();
+</script>
+</body>
+</html>
